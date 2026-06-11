@@ -1,0 +1,27 @@
+[project]
+name = "cv-agent"
+version = "0.1.0"
+description = "Personal-brand/CV assistant agent — E2E learning project for Amazon Bedrock AgentCore"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic-ai-slim[bedrock]",
+    "pydantic-settings",
+    "fastapi",
+    "uvicorn[standard]",
+    "httpx",
+    "bedrock-agentcore>=1.14.0",
+    "aws-opentelemetry-distro>=0.17.1",
+]
+
+[project.scripts]
+cv-agent-chat = "cv_agent.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cv_agent"]
+
+[dependency-groups]
+dev = []

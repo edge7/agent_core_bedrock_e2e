@@ -1,0 +1,19 @@
+{
+  "name": "cv-agent-front-door",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2",
+    "esbuild": "^0.25",
+    "ts-node": "^10",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-agentcore": "^3",
+    "aws-cdk-lib": "^2",
+    "constructs": "^10"
+  }
+}

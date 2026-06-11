@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific
+.idea/
+.claude
+# Personal data — loaded from AWS Secrets Manager in production
+app/src/cv_agent/data/cv.md
+

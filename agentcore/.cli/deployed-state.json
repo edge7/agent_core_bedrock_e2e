@@ -1,0 +1,17 @@
+{
+  "targets": {
+    "default": {
+      "resources": {
+        "runtimes": {
+          "cvagent": {
+            "runtimeId": "cvagent_cvagent-ZFex4XAzr2",
+            "runtimeArn": "arn:aws:bedrock-agentcore:eu-west-1:103504787248:runtime/cvagent_cvagent-ZFex4XAzr2",
+            "roleArn": "arn:aws:iam::103504787248:role/AgentCore-cvagent-default-ApplicationAgentCvagentRu-2ozd5oaoFnRx"
+          }
+        },
+        "stackName": "AgentCore-cvagent-default",
+        "deployHash": "d1e4d9e48b078a12"
+      }
+    }
+  }
+}

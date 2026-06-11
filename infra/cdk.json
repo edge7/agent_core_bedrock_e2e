@@ -1,0 +1,9 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/front-door.ts",
+  "context": {
+    "domainName": "cv.ed7.engineering",
+    "hostedZoneId": "Z08061253EGOBUFKLAFHU",
+    "agentRuntimeArn": "arn:aws:bedrock-agentcore:eu-west-1:103504787248:runtime/cvagent_cvagent-ZFex4XAzr2",
+    "agentRegion": "eu-west-1"
+  }
+}

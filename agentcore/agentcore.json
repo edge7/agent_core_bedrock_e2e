@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.agentcore.aws.dev/v1/agentcore.json",
+  "name": "cvagent",
+  "version": 1,
+  "managedBy": "CDK",
+  "tags": {
+    "agentcore:created-by": "agentcore-cli",
+    "agentcore:project-name": "cvagent"
+  },
+  "runtimes": [
+    {
+      "name": "cvagent",
+      "build": "CodeZip",
+      "entrypoint": "main.py",
+      "codeLocation": "app/",
+      "runtimeVersion": "PYTHON_3_13",
+      "networkMode": "PUBLIC",
+      "protocol": "HTTP",
+      "instrumentation": {
+        "enableOtel": true
+      },
+      "envVars": [
+        {
+          "name": "CV_AGENT_CV_SECRET_NAME",
+          "value": "cv-agent/cv"
+        },
+        {
+          "name": "CV_AGENT_PUSHOVER_SECRET_NAME",
+          "value": "cv-agent/pushover"
+        },
+        {
+          "name": "CV_AGENT_MODEL_ID",
+          "value": "global.anthropic.claude-sonnet-4-6"
+        }
+      ]
+    }
+  ],
+  "memories": [],
+  "credentials": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": [],
+  "policyEngines": [],
+  "configBundles": [],
+  "abTests": [],
+  "httpGateways": [],
+  "harnesses": [],
+  "datasets": [],
+  "payments": []
+}
